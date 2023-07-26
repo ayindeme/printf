@@ -13,7 +13,7 @@ int	putst(char	*c)
 	{
 		for	(count	=	0;	c[count]	!=	'\0';	count++)
 		{
-			my_putch(c[count]);
+			putch(c[count]);
 		}
 	}
 	return	(count);

@@ -5,8 +5,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-int	my_putch(char	c);
-int	printf(const	char	*format,	...);
+int	putch(char	c);
+int	_printf(const	char	*format,	...);
 int     putst(char      *c);
 
 #endif

@@ -17,12 +17,12 @@ int _printf(const char *format, ...)
 	{
 		if	(format[p]	!=	'%')
 		{
-			my_putch(format[p]);
+			putch(format[p]);
 		}
 
 		else	if	(format[p]	==	'%'	&&	format[p	+	1]	==	'c')
 		{
-			my_putch(va_arg(args,	int));
+			putch(va_arg(args,	int));
 			p++;
 		}
 		else	if	(format[p	+	1]	==	's')
@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 		}
 		else	if	(format[p	+	1]	==	'%')
 		{
-			my_putch('%');
+			putch('%');
 		}
 		count++;
 	}
