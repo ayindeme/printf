@@ -4,7 +4,7 @@
  * @c: character to be written
  * Return: 1
  */
-int my_putch(char c)
+int	my_putch(char	c)
 {
 	return	(write(1,	&c,	1));
 }
